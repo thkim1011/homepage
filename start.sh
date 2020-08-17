@@ -1,0 +1,2 @@
+cd ../homepage-output
+python3 -m http.server
