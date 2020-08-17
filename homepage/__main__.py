@@ -3,6 +3,7 @@ import os
 import sys
 from homepage.render import JinjaRenderer, MarkdownRenderer
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--source_dir", type=str, required=True)
@@ -17,6 +18,7 @@ def main():
         sys.exit(1)
 
     JinjaRenderer(source_dir, output_dir).render()
+
 
 if __name__ == "__main__":
     main()
